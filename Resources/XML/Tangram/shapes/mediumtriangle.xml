@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Polygons are named in such a way that they can be easily instantiated
+ from a cache instead of from a file.-->
+<polygon name="mediumtriangle">
+  <point x="0.0"  y="0.0"/> <!--P0-->
+  <point x="-0.5" y="0.5"/> <!--P1-->
+  <point x="0.0"  y="0.5"/> <!--P2-->
+  <!--Useful Notes:
+  Distance(p0,p1) = 0.707106781
+  -->
+</polygon>

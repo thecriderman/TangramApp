@@ -1,0 +1,6 @@
+﻿<TABB:TableApplicationControl x:Class="TangramApp1._35.TableControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:TABB="clr-namespace:libSMARTMultiTouch.Controls;assembly=libSMARTMultiTouch"
+    Loaded="TableApplicationControl_Loaded" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+</TABB:TableApplicationControl>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Polygons are named in such a way that they can be easily instantiated
+ from a cache instead of from a file.-->
+
+<!--Note: square is tilted sideways-->
+<polygon name="square">
+  <point x="0.0"   y="0.0"/> <!--p0-->
+  <point x="-0.25" y="0.25"/><!--p1-->
+  <point x="0.0"   y="0.5"/> <!--p2-->
+  <point x="0.25"  y="0.25"/><!--p3-->
+  <!--Useful Notes:
+  Distance(p0,p1) = Distance(p1,p2) = Distance(p2,p3) = Distance(p3,p0)= 0.353553391-->
+</polygon>

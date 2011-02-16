@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<puzzle name="Fisherman" scale="300">
+  <directives>
+    <directive name="greentouch"/>
+    <directive name="greentouch"/>
+    <directive name="greentouch"/>
+  </directives>
+
+  <!--List of shapes necessary to complete the puzzle-->
+  <!--Standard tangram set-->
+  <needs>
+    <!--x,y are to be scaled coords-->
+    <shape name="largetriangle" color="green" x="0.25" y="0.25" angle="90"/>
+    <shape name="largetriangle" color="green" x="0.0"  y="0.0"  angle="0"/>
+    <shape name="mediumtriangle" color="green" x="0.25" y="0.75" angle="90"/>
+    <shape name="smalltriangle" color="green" x="-0.125" y="0.125" angle="-90"/>
+    <shape name="smalltriangle" color="green" x="0.25" y="0.50" angle="180"/>
+    <shape name="parallelogram" color="green" x="0.25" y="0.75"/>
+    <shape name="square" color="green" x="0.25" y="0.25"/>
+  </needs>
+
+  <polygon>
+    <!--NOT THAT BAD-->
+    <point x="0" y="0"/> <!--p0-->
+    <point x="0.25" y="0.25"/>
+    <point x="0.50" y="0.0"/>
+    <point x="0.75" y="0.25"/>
+    <point x="1.0" y="0.0"/>
+    <point x="1.0" y="0.5"/>
+    <point x="0.75" y="0.75"/>
+    <point x="0.75" y="1.25"/>
+    <point x="0.95710678" y="1.45710678"/>
+    <point x="0.25" y="1.45710678"/>
+    <point x="-0.113553391" y="1.45710678"/>
+    <point x="0.25" y="1.103553389"/>
+    <point x="0.25" y="0.75"/>
+    <point x="0.0" y="0.50"/>
+  </polygon>
+
+  <hint>
+    <!--There are no hints at level zero-->
+  </hint>
+
+  <hint>
+    
+  </hint>
+
+</puzzle>

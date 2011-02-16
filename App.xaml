@@ -1,0 +1,18 @@
+﻿
+    <Application x:Class="TangramApp1._35.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/UnstyledButton.xaml"/>
+                <ResourceDictionary Source="Styles/Bragl.xaml"/>
+                <ResourceDictionary Source="Styles/BraglListBox.xaml"/>
+                <ResourceDictionary Source="Styles/BraglListBoxItem.xaml"/>
+                <ResourceDictionary Source="Styles/PieMenuButton.xaml"/>
+                <ResourceDictionary Source="Styles/WampTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

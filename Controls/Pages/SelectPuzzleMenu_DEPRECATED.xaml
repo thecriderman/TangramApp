@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="TangramApp1._35.Controls.Pages.SelectPuzzleMenuV1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:controls="clr-namespace:TangramApp1._35.Controls"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="Black"/>
+        </Grid.Background>
+        <controls:TouchButton2 x:Name="PlayButton" Style="{StaticResource BraglButtonGreen}" Margin="673,515,12,26">
+            <controls:TouchButton2.Content> 
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="pack://application:,,,/Resources/Images/PlayButton.png" Height="35" Width="35" />
+                    <TextBlock VerticalAlignment="Center" FontSize="20" Text="Play"/>
+                </StackPanel>
+            </controls:TouchButton2.Content>
+        </controls:TouchButton2>
+        <GroupBox Header="Mode" Height="100" BorderThickness="2" Foreground="White" BorderBrush="White" HorizontalAlignment="Left" Margin="12,488,0,0" Name="groupBox1" VerticalAlignment="Top" Width="490">
+            <StackPanel Orientation="Horizontal" Height="79" Width="477">
+                <controls:TouchToggleButton Style="{StaticResource BraglToggleButton}" Margin="10" Width="100" Content="Free"/>
+                <controls:TouchToggleButton Style="{StaticResource BraglToggleButton}" Margin="10" Width="100" Content="Divided"/>
+                <controls:TouchToggleButton Style="{StaticResource BraglToggleButton}" Margin="10" Width="100" Content="Single"/>
+                <controls:TouchToggleButton Content="Custom" Style="{StaticResource BraglToggleButton}" Margin="10" Width="100" />
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>

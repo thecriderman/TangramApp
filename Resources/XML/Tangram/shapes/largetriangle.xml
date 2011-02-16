@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--VERY SIMPLE-->
+<polygon name="largetriangle">
+  <point x="0.0" y="0.0"/> <!--p0-->
+  <point x="1.0" y="0.0"/> <!--p1-->
+  <point x="0.5" y="0.5"/> <!--p2-->
+  <!--Useful notes:
+  Hypotenuse = Distance(p0, p1) = 1
+  Distance(p0,p2) = Distance(p2, p1) = 0.707106781
+  -->
+</polygon>

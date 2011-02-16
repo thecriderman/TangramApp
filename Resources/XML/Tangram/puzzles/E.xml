@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--The name of the puzzle is used for storage.-->
+<puzzle name="E" scale="300">  
+  
+  <!--List of shapes necessary to complete the puzzle-->
+  <needs>
+    <!--Standard tangram set-->
+    <shape name="largetriangle"  x="0.25" y="0.25" angle="90"/>
+    <shape name="largetriangle"  x="0.0"  y="0.0"  angle="0"/>
+    <shape name="mediumtriangle" x="0.25" y="0.75" angle="90"/>
+    <shape name="smalltriangle"  x="-0.125" y="0.125" angle="-90"/>
+    <shape name="smalltriangle"  x="0.25" y="0.50" angle="180"/>
+    <shape name="parallelogram"  x="0.25" y="0.75"/>
+    <shape name="square"         x="0.25" y="0.25"/>
+  </needs>
+  
+  <!--Fortunately, this puzzle consists of only 1 major polygon-->
+  <polygon>
+    <point x="0.0" y="0.0"/> <!--p0-->
+    <point x="0.707106781" y="0.0"/> <!--p1-->
+    <point x="0.707106781" y="0.353553391"/> <!--p2-->
+    <point x="0.353553391" y="0.353553391"/> <!--p3-->
+    <!--END OF FIRST HUMP-->
+    <!--Technically, the square could be placed anywhere-->
+    <!--START OF SECOND HUMP-->
+    <point x="0.353553391" y="0.707106781"/> <!--p4-->
+    <point x="0.707106781" y="0.707106781"/> <!--p5-->
+    <point x="0.707106781" y="1.060660172"/> <!--p6-->
+    <point x="0.353553391" y="1.060660172"/> <!--p7-->
+    <!--END OF SECOND HUMP-->
+    <!--START OF THIRD HUMP-->
+    <point x="0.353553391" y="1.414213562"/> <!--p8-->
+    <point x="0.707106781" y="1.414213562"/> <!--p9-->
+    <point x="0.707106781" y="1.767766953"/> <!--p10-->
+    <point x="0" y="1.7677669525"/> <!--p11-->
+    <!--END OF THIRD HUMP-->
+    <!--all points after this are extra, and only used for hinting purposes-->
+    <point x="0" y="1.060660172"/> <!--p12-->
+    <point x="0" y="0.707106781"/> <!--p13-->
+  </polygon>
+
+  <!--level 0 denotes the starting hints-->
+  <hint level="0">
+    <!--no hints for you-->
+  </hint>
+  
+  <!--without the attribute level, it assumes that each hint tag is in order-->
+  <hint level="1">
+    <!--Creates a linear link showing the outline of where a shape goes-->
+    <borderlink polyindex="0" index-1="1" index-2="3"/>
+    <borderlink polyindex="0" index-1="3" index-2="13"/>
+    <borderlink polyindex="0" index-1="4" index-2="7"/>
+    <borderlink polyindex="0" index-1="7" index-2="13"/>
+    <borderlink polyindex="0" index-1="8" index-2="10"/>
+    <borderlink polyindex="0" index-1="8" index-2="12"/>
+  </hint>
+
+  <hint level="2">
+    <!--Creates a linear link showing the outline of where a shape goes-->
+    <borderlink polyindex="0" index-1="1" index-2="3"/>
+    <borderlink polyindex="0" index-1="3" index-2="13"/>
+    <borderlink polyindex="0" index-1="4" index-2="7"/>
+    <borderlink polyindex="0" index-1="7" index-2="13"/>
+    <borderlink polyindex="0" index-1="8" index-2="10"/>
+    <borderlink polyindex="0" index-1="8" index-2="12"/>
+  </hint>
+  
+</puzzle>

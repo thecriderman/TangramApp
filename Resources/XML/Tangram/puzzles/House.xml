@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<puzzle name="House" scale="300">
+  <directives>
+    <directive name="redtouch"/>
+    <directive name="greentouch"/>
+    <directive name="purpletouch"/>
+  </directives>
+
+  <!--List of shapes necessary to complete the puzzle-->
+  <needs>
+    <!--Standard tangram set-->
+    <shape name="largetriangle" color="purple"/>
+    <!--Custom shapes are not supported yet.-->
+    <shape name="largetriangle" color="green"/>
+    <shape name="mediumtriangle" color="red"/>
+    <shape name="smalltriangle" color="green"/>
+    <shape name="smalltriangle" color="red"/>
+    <shape name="parallelogram" color="red"/>
+    <shape name="square" color="purple"/>
+  </needs>
+
+
+  <!--VERY ANNOYING-->
+  <polygon>
+
+    <point x="0" y="0"/>
+    <!--P0-->
+    <point x="0" y="0.353553390593274"/>
+    <!--P1-->
+    <point x="-0.353553390593274" y="0.707106781186548"/>
+    <!--P2-->
+    <point x="-0.176776695296637" y="0.707106781186548"/>
+    <!--P3-->
+    <point x="-0.176776695296637" y="1.20710678118655"/>
+    <!--P4-->
+    <point x="0.823223304703363" y="1.20710678118655"/>
+    <!--P5-->
+    <point x="0.823223304703363" y="0.707106781186548"/>
+    <!--P6-->
+    <point x="1" y="0.707106781186548"/>
+    <!--P7-->
+    <point x="0.5" y="0.207106781186548"/>
+    <!--P8-->
+    <point x="0.353553390593274" y="0.353553390593274"/>
+    <!--P9-->
+    <point x="0.353553390593274" y="0"/>
+    <!--P10-->
+
+    <!--Extra points for the hints.  At this point, they do strange
+    things to the polygon.
+    <point x="0" y="0.707106781186548"/>
+    <point x="0.353553390593274" y="0.707106781186548"/>
+    <point x="0.573223304703363" y="0.957106781186548"/>
+    -->
+
+
+  </polygon>
+
+
+  <!--level 0 denotes the starting hints-->
+  <hint elapsed="5" vote="false">
+    <!--HINT LEVEL 1 doesnt get any hints-->
+  </hint>
+
+  <hint elapsed="5" vote="false">
+    <borderlink polyindex="0" index-1="1" index-2="9"/>
+    <borderlink polyindex="0" index-1="3" index-2="6"/>
+    <freelink x0="0" y0="0.707106781186548" x1="0" y1="0"/>
+  </hint>
+
+  <hint elapsed="5" vote="false">
+    <freelink x0="0" y0="0.353553390593274" x1="0.353553390593274" y1="0.707106781186548"/>
+  </hint>
+  
+
+</puzzle>

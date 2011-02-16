@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="TangramApp1._35.StyledComponentDemo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:controls="clr-namespace:TangramApp1._35.Controls"
+             xmlns:pages="clr-namespace:TangramApp1._35.Controls.Pages"
+             xmlns:flair="clr-namespace:TangramApp1._35.Flair"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="646"
+             >
+    <Grid>
+        <flair:ParticleCanvas Width="300" Height="300">
+            <flair:ParticleCanvas.Emitters>
+                <flair:Emitter>
+                    <flair:Emitter.ExampleParticle>
+                        <flair:Particle Lifetime="100">
+                            <flair:Particle.PartControl>
+                                <flair:QuadraticParticleController Ax="0.0" Ay="0.1"/>
+                            </flair:Particle.PartControl>
+                            <flair:Particle.Image>
+                                <Image Source="Resources/Images/Flair/testparticle.png"></Image>
+                            </flair:Particle.Image>
+                        </flair:Particle>
+                    </flair:Emitter.ExampleParticle>
+                    <flair:Emitter.ParticleLauncher>
+                        <flair:RandomPolarParticleLauncher MinVelocity="2" MaxVelocity="10"/>
+                    </flair:Emitter.ParticleLauncher>
+                </flair:Emitter>
+            </flair:ParticleCanvas.Emitters>
+        </flair:ParticleCanvas>
+        
+        <controls:TouchButton2 Style="{StaticResource WampButton}" Content="Button" Height="36" HorizontalAlignment="Left" Margin="12,12,0,0" x:Name="button1" VerticalAlignment="Top" Width="69" />
+        <controls:TouchToggleButton Style="{StaticResource WampButton}" Content="Toggle Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="162,12,0,0" Height="36" />
+        <controls:TouchButton2 Content="Button" Height="36" HorizontalAlignment="Left" Margin="87,12,0,0" x:Name="button2" Style="{StaticResource WampButtonGreen}" VerticalAlignment="Top" Width="69" />
+        
+        <ListBox Height="153" Style="{StaticResource BraglListBox}"  HorizontalAlignment="Left" Margin="12,135,0,0" Name="listBox1" VerticalAlignment="Top" Width="379">
+            <ListBoxItem IsSelected="True">STUFF</ListBoxItem>
+            <ListBoxItem>You know the beauty of this? I can type far too many things to be seen</ListBoxItem>
+            <ListBoxItem>STUFF</ListBoxItem>
+            <ListBoxItem>STUFF</ListBoxItem>
+            <ListBoxItem><Button Content="Bet you didnt see this coming"/></ListBoxItem>
+        </ListBox>
+        
+        
+        
+        <!--<pages:GameSubModeSelect Width="800" Height="600" Background="Black"></pages:GameSubModeSelect>-->
+    </Grid>
+</UserControl>

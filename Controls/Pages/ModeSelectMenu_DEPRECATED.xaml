@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="TangramApp1._35.Controls.Pages.ModeSelectMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+    <UserControl.Background>
+        <!--TODO: REPLACE WITH IMAGE-->
+        <SolidColorBrush Color="Black"/>
+    </UserControl.Background>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Margin="10" BorderThickness="3" Style="{StaticResource BraglButton}" Name="button1" >
+            <Grid VerticalAlignment="Stretch" HorizontalAlignment="Center"
+                  Width="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type Border}},Path=ActualWidth}"
+                  Height="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type Border}}, Path=ActualHeight}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Name="GameTop" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Text="GAME">
+                </TextBlock>
+                <Image Grid.Row="1"></Image>
+                <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Text="GAME"/>
+            </Grid>
+        </Button>
+        <Button Grid.Column="1" Margin="10" BorderThickness="3" Style="{StaticResource BraglButtonGreen}" Name="button2">
+            <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                  Width="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type Border}},Path=ActualWidth}"
+                  Height="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type Border}}, Path=ActualHeight}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Name="Design" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Text="DESIGN">
+                </TextBlock>
+                <Image Grid.Row="1"></Image>
+                <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Text="DESIGN"/>
+            </Grid>
+        </Button>
+        
+    </Grid>
+</UserControl>
